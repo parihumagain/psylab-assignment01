@@ -1,6 +1,16 @@
 <html>
 <header><title>This is title</title></header>
 <body>
-"Hello,  !"
+<form action="PayslipServlet" method="get">
+          "Hello, <input type="text" name="lname" id="lname"> ! <br/>
+          <br>
+          <input type="button" value="Submit" onClick="pr()">
+        </form>
+        <script>
+          function pr() {
+            document.getElementById("result").innerHTML = "Hello, " + document.getElementById('lname').value +"!" ;
+          }
+        </script>
+<span id="result"></span> !"
 </body>
 </html>
