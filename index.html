@@ -2,13 +2,12 @@
 <header><title>This is title</title></header>
 <body>
 <form action="PayslipServlet" method="get">
-          "Hello, <input type="text" name="lname" id="lname"> ! <br/>
-          <br>
+          "Hello, <input type="text" name="name" id="name">  ! "
           <input type="button" value="Submit" onClick="pr()">
         </form>
         <script>
           function pr() {
-            document.getElementById("result").innerHTML = "Hello, " + document.getElementById('lname').value +"!" ;
+            document.getElementById("result").innerHTML = "Hello, " + document.getElementById('name').value + "!" ;
           }
         </script>
 <span id="result"></span> "
